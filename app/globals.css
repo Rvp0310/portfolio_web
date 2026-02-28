@@ -7,7 +7,7 @@
   --deep-twilight-2: #13125Aff;  /*section backgorund*/
   --deep-navy-2: #06053Bff;  /*borders*/
   --lavender-grey: #8E8CC1ff; /*passive link*/
-  --cream: #FFFECB;  /*highlight*/
+  --cream: #fffecc;  /*highlight*/
   --procelain: #FFFFFA; /*texts*/
   --true-cobalt: #211F86ff; /*section backgorund*/
   --x: 50%;
@@ -32,6 +32,10 @@ body {
   margin: 0;
 }
 
+p{
+  font-size: 1rem;
+}
+
 .cursor-glow {
   position: fixed;
   inset: 0;
@@ -46,5 +50,72 @@ body {
 
 .nav_{
   color: var(--procelain) !important;
+  font-size: 0.7rem !important;
 }
 
+.sect{
+  display: flex;
+  margin: 1.5rem 3rem;
+  color: var(--procelain);
+}
+
+.name{
+  font-size: 2.5rem;
+}
+
+.roles{
+  margin-bottom: 1.3rem;
+}
+
+.pro-pic{
+height: 105px;
+width: auto;
+}
+
+.hero{
+  margin-right: 10px;
+}
+
+.displays{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cards{
+  border: 1.5px var(--cream) double;
+  border-radius: 17px;
+  padding: 1rem !important;
+  margin-top: 1rem !important;
+}
+
+.cards ul {
+  padding-left: 1rem;  
+  margin: 0.5rem 0 0 0; 
+}
+
+@media (max-width: 1024px) {
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .cursor-glow {
+    display: none;
+  }
+  
+  .nav_ {
+    font-size: 0.5rem !important;
+  }
+
+  .sect{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .displays{
+    width: 100%;
+  }
+}

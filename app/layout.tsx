@@ -14,9 +14,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='antialiased'>
-        <div className="cursor-glow">
+        <div className="cursor-glow"></div>
           {children}
-        </div>
       </body>
     </html>
   );
