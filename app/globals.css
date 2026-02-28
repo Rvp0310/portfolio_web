@@ -3,13 +3,15 @@
 :root {
   --deep-twilight: #191868ff; /*background*/
   --deep-navy: #0C1342ff;  /*borders*/
-  --slate-grey: #6F7290ff;  /*passive link*/
+  --turquoise: #16E0BD; /*active link or 623CEA*/
   --deep-twilight-2: #13125Aff;  /*section backgorund*/
   --deep-navy-2: #06053Bff;  /*borders*/
-  --lavender-grey: #8E8CC1ff; /*active link*/
-  --cream: #FFFECB;  /*texts*/
+  --lavender-grey: #8E8CC1ff; /*passive link*/
+  --cream: #FFFECB;  /*highlight*/
   --procelain: #FFFFFA; /*texts*/
   --true-cobalt: #211F86ff; /*section backgorund*/
+  --x: 50%;
+  --y: 50%;
 
   /*HSL if needed
   --deep-twilight: hsla(241, 63%, 25%, 1);
@@ -24,8 +26,25 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--deep-navy-2);
+  color: var(--procelain);
   font-family: serif, sans-serif;
-  overflow: hidden;
+  margin: 0;
 }
+
+.cursor-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: all;
+  background: radial-gradient(
+    70px circle at var(--x) var(--y),
+    var(--lavender-grey),
+    transparent 60%
+  );
+  z-index: -5;
+}
+
+.nav_{
+  color: var(--procelain) !important;
+}
+
