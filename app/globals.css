@@ -30,6 +30,7 @@ body {
   color: var(--procelain);
   font-family: serif, sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 
 p{
@@ -96,6 +97,26 @@ width: auto;
   margin: 0.5rem 0 0 0; 
 }
 
+.foot-ico{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.resume-preview{
+  margin-top: 2rem !important;
+  margin-left: 8rem !important;
+}
+
+.contact{
+  margin: 0;
+}
+
+.ico:hover{
+  color: var(--deep-navy-2);
+}
+
 @media (max-width: 1024px) {
   body{
     overflow-y: scroll;
@@ -117,5 +138,13 @@ width: auto;
   
   .displays{
     width: 100%;
+  }
+
+  .foot-ico{
+    padding-right: 4rem;
+  }
+
+  .ico:hover{
+    color: var(--lavender-grey);
   }
 }
