@@ -69,8 +69,13 @@ p{
 }
 
 .pro-pic{
-height: 105px;
+height: 30vh;
 width: auto;
+display: block;
+position: relative;
+border: 2px solid var(--cream);
+padding: 0.1rem;
+border-radius: 12px;
 }
 
 .hero{
@@ -146,5 +151,10 @@ width: auto;
 
   .ico:hover{
     color: var(--lavender-grey);
+  }
+
+  .resume-preview{
+    margin-left: 14% !important;
+    width: 80vw !important;
   }
 }

@@ -7,7 +7,9 @@ const About = () => {
     <>
       <Hero />
       <div className="displays">
-      <img src={"/pict.jpg"} className="pro-pic" />
+      <div className="pro-pic-wrapper">
+      <img src={"/pict.jpeg"} className="pro-pic" />
+      </div>
       <SkillChart 
         skills={[
             {name: 'C++', level: 90},
