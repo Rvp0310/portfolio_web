@@ -3,6 +3,17 @@ import ProjectCard from "../ProjectCard";
 
 const projects = [
   {
+    src: "/Visualizer_v2.5.mp4",
+    title: "Graphic Editor",
+    description:
+      "A Canva-inspired online editor built using the Next Full-stack. It focuses on a seamless design experience with support for layers, shapes, text, and image manipulation — all running in real time.",
+    techstack: [
+      "Next.js", "MongoDB", "Fabric.js", "Material UI", "bootstrap"
+    ],
+    repo_link: "https://github.com/Rvp0310/Graphic_Editor",
+    live_link: "https://graphic-editor-smeargle.vercel.app",
+  },
+  {
     src: "/smart_home_energy_demo.mp4",
     title: "Smart Home Energy Optimization",
     description:
@@ -31,26 +42,15 @@ const projects = [
     repo_link: "https://github.com/Rvp0310/Algorithm_Visualiser",
     live_link: "",
   },
-  {
-    src: "/Visualizer_v2.5.mp4",
-    title: "Graphic Editor",
-    description:
-      "A Canva-inspired online editor built using the Next Full-stack. It focuses on a seamless design experience with support for layers, shapes, text, and image manipulation — all running in real time.",
-    techstack: [
-      "Next.js", "MongoDB", "Fabric.js", "Material UI", "bootstrap"
-    ],
-    repo_link: "https://github.com/Rvp0310/Graphic_Editor",
-    live_link: "https://graphic-editor-smeargle.vercel.app",
-  },
 ];
 
 const Projects = () => {
   return (
-    <>
+    <div className="card-stack">
       {projects.map((project) => (
         <ProjectCard project={project} />
       ))}
-    </>
+    </div>
   );
 };
 

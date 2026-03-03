@@ -8,6 +8,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import { IconButton } from '@mui/material';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
 
 interface ProjectCardProps {
     project: {
@@ -22,14 +23,14 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: "25px" }}>
+    <Card sx={{ maxWidth: 345, height: "85vh", margin: "25px" }}>
       <video
         src={project.src}
         controls
         style={{ width: "100%", height: "190px" }}
     />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" >
           {project.title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
@@ -39,9 +40,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
         {project.techstack.map((tech) => <Chip label = {tech} color="info" size="small" />)}
         </Stack>
       </CardContent>
-      <CardActions>
-        <IconButton onClick={() => window.open(`${project.repo_link}`)}><GitHubIcon/></IconButton>
-        {project.live_link == "" ? <></>: <IconButton onClick={() => window.open(`${project.live_link}`)}><LaunchIcon/></IconButton>}
+      <CardActions sx={{position: "relative", left: "3", bottom: "1"}}>
+        <Tooltip title="GitHub Repository"><IconButton onClick={() => window.open(`${project.repo_link}`, "_blank")}><GitHubIcon sx={{color: '#211F86ff'}}/></IconButton></Tooltip>
+        {project.live_link == "" ? <></>: <Tooltip title="Launch Project"><IconButton onClick={() => window.open(`${project.live_link}`, "_blank")}><LaunchIcon sx={{color: '#211F86ff'}}/></IconButton></Tooltip>}
       </CardActions>
     </Card>
   )

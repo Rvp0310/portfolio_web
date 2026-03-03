@@ -58,7 +58,7 @@ export default function Home() {
         ))}
       </Tabs>
     </Box>
-    <div className="sect">
+    <div className="sect" >
       {
         renderSection()
       }

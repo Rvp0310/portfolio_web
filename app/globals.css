@@ -30,7 +30,6 @@ body {
   color: var(--procelain);
   font-family: serif, sans-serif;
   margin: 0;
-  overflow: hidden;
 }
 
 p{
@@ -122,6 +121,15 @@ border-radius: 12px;
   color: var(--deep-navy-2);
 }
 
+.card-stack{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1024px) {
   body{
     overflow-y: scroll;
@@ -154,7 +162,12 @@ border-radius: 12px;
   }
 
   .resume-preview{
-    margin-left: 14% !important;
-    width: 80vw !important;
+    margin-left: 5% !important;
+    width: 90vw !important;
+  }
+
+  .card-stack{
+    flex-direction: column;
+    align-items: center;
   }
 }
