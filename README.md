@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#                    PORTFOLIO WEBSITE                     #
 
-## Getting Started
+A personal portfolio website built to showcase my projects,
+technical skills, certifications, and experience in
+web development and AI/ML.
 
-First, run the development server:
+Focused on clarity, performance, and clean presentation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<br/>
+
+#                      TECH STACK                          #
+
+- React
+- Next.js
+- TypeScript
+- Material UI (MUI)
+- Tailwind CSS
+- Chart.js (Radar skill visualization)
+
+<br/>
+
+#                        FEATURES                          #
+
+- Responsive design (desktop + mobile)
+- Tab-based navigation
+- Skill radar chart visualization
+- Embedded video demos / iframe previews
+- Resume preview + downloadable PDF
+- Direct contact links (GitHub, LinkedIn, Email)
+
+<br/>
+
+#                         SECTIONS                         #
+
+[ About ]
+- Introduction
+- Education
+- Experience
+
+[ Projects ]
+- AI/ML systems
+- Full-stack applications
+- Visualization tools
+- Demo + Tech Stack + GitHub links
+
+[ Certifications ]
+- Relevant training and certifications
+
+[ Contact & Resume ]
+- Social links
+- Email shortcut
+- Resume preview
+- Resume download
+
+<br/>
+
+#                   INSTALLATION GUIDE                     #
+
+Clone repository:
+
+```
+git clone https://github.com/your-username/portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to project:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd portfolio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies:
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run development server:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open in browser:
+http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<br/>
 
-## Deploy on Vercel
+#                   DESIGN PHILOSOPHY                      #
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Structured like a character profile
+- Skills visualized as measurable traits
+- Clear identity, clear capabilities
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<br/>
+
+#                        LICENSE                           #
+
+Open for learning and inspiration.
+Fork with credit.
