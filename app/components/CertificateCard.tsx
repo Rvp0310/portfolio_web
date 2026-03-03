@@ -16,13 +16,14 @@ interface CertificateCardProps {
 
 const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: "25px" }}>
+    <Card sx={{ maxWidth: 345, margin: "25px", display: "flex", flexDirection: "column" }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
           image={certificate.src}
           alt={certificate.name}
+          sx={{ objectFit: "cover" }}
         />
         <CardContent sx={{borderTop: "1px solid black"}}>
           <Typography gutterBottom variant="h5" component="div">

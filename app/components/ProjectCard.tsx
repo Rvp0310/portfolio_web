@@ -23,13 +23,13 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
   return (
-    <Card sx={{ maxWidth: 345, height: "85vh", margin: "25px" }}>
+    <Card className="proj-card" sx={{ maxWidth: 345, height: 450, margin: "25px", display: "flex", flexDirection: "column" }}>
       <video
         src={project.src}
         controls
-        style={{ width: "100%", height: "190px" }}
+        style={{ width: "100%", height: "150px", objectFit: "cover" }}
     />
-      <CardContent>
+      <CardContent sx={{flexGrow: 1}}>
         <Typography gutterBottom variant="h5" component="div" >
           {project.title}
         </Typography>
@@ -37,10 +37,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
           {project.description}
         </Typography>
         <Stack className="mt-2" direction="row" spacing={1} flexWrap="wrap" useFlexGap>
-        {project.techstack.map((tech) => <Chip label = {tech} color="info" size="small" />)}
+        {project.techstack.map((tech, index) => <Chip key={index} label = {tech} color="info" size="small" />)}
         </Stack>
       </CardContent>
-      <CardActions sx={{position: "relative", left: "3", bottom: "1"}}>
+      <CardActions sx={{mt: "auto", mb: "3px"}}>
         <Tooltip title="GitHub Repository"><IconButton onClick={() => window.open(`${project.repo_link}`, "_blank")}><GitHubIcon sx={{color: '#211F86ff'}}/></IconButton></Tooltip>
         {project.live_link == "" ? <></>: <Tooltip title="Launch Project"><IconButton onClick={() => window.open(`${project.live_link}`, "_blank")}><LaunchIcon sx={{color: '#211F86ff'}}/></IconButton></Tooltip>}
       </CardActions>

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='hero'>
      <h1 className='name'>Rutuja V Parab</h1>
-     <h6 className='roles'>Student | Reader | Developer | Exploring Programming & AI</h6>
+     <h6 className='roles'>Student | Developer | Exploring Programming & AI</h6>
      <div className='cards'>
         <h5><SchoolIcon />&emsp;Education</h5>
             <b>Bharati Vidyapeeth College Of Engineering, Navi Mumbai</b><br/>
@@ -25,6 +25,9 @@ const Hero = () => {
             </li>
             <li>
                 Coordinated a team of interns for final work presentation.
+            </li>
+            <li>
+                Recognized as a top contributor across multiple Scrum sprints based on performance and timely deliverables.
             </li>
         </ul>
      </div>

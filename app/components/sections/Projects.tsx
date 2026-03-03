@@ -3,21 +3,21 @@ import ProjectCard from "../ProjectCard";
 
 const projects = [
   {
-    src: "/Visualizer_v2.5.mp4",
+    src: "/graphic_editor_v1.mp4",
     title: "Graphic Editor",
     description:
-      "A Canva-inspired online editor built using the Next Full-stack. It focuses on a seamless design experience with support for layers, shapes, text, and image manipulation — all running in real time.",
+      "A browser-based design tool inspired by Canva, supporting real-time editing with layers, shapes, text, and image manipulation for a smooth creative workflow.",
     techstack: [
-      "Next.js", "MongoDB", "Fabric.js", "Material UI", "bootstrap"
+      "Next.js", "MongoDB", "Fabric.js", "Material UI", "Bootstrap"
     ],
     repo_link: "https://github.com/Rvp0310/Graphic_Editor",
     live_link: "https://graphic-editor-smeargle.vercel.app",
   },
   {
     src: "/smart_home_energy_demo.mp4",
-    title: "Smart Home Energy Optimization",
+    title: "Smart Home Energy Optimization System",
     description:
-      "A Flask-based web application that predicts future energy consumption for smart home devices using a deep learning time-series model and suggest tips to avoid alarmingly high consumption.",
+      "A predictive web application that forecasts household energy consumption and provides insights to prevent excessive usage.",
     techstack: [
       "Python",
       "Flask",
@@ -33,7 +33,7 @@ const projects = [
     src: "/Visualizer_v2.5.mp4",
     title: "Algorithm Visualizer",
     description:
-      "A sleek, dark-themed algorithm visualizer built with React, Next.js, Tailwind, Material UI, and Redux Toolkit. The platform lets users explore classic algorithms through animated, step-by-step visualizations — good for learning, and teaching.",
+      "An interactive platform that demonstrates classic algorithms through animated, step-by-step visualizations to simplify learning and teaching.",
     techstack: [
       "React",
       "Bootstrap",
