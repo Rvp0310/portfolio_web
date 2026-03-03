@@ -41,7 +41,7 @@ const Contact_Resume = () => {
       </div>
       <div className="resume-preview">
         <iframe
-          src="/resume.pdf"
+          src="/Resume.pdf"
           title="Resume Preview"
           width="80%"
           height="600px"
