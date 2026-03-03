@@ -48,7 +48,7 @@ const SkillChart: React.FC<SkillChartProps> = ({ skills }) => {
         suggestedMin: 0,
         suggestedMax: 100,
         ticks: {
-          display: false
+          display: false,
         },
         pointLabels: {
           color: "#FFFFFA",
@@ -62,7 +62,12 @@ const SkillChart: React.FC<SkillChartProps> = ({ skills }) => {
     },
   };
 
-  return <Radar data={data} options={options} />;
+  return (
+    <div className="card-stack">
+      <Radar data={data} options={options} />
+      <h5>Language Usability</h5>
+    </div>
+  );
 };
 
 export default SkillChart;

@@ -7,7 +7,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 const Contact_Resume = () => {
   return (
-    <div className="contact">
+    <>
       <div className="foot-ico">
         <Tooltip title="To GitHub Profile">
           <IconButton
@@ -47,7 +47,7 @@ const Contact_Resume = () => {
           height="600px"
         />
       </div>
-    </div>
+    </>
   );
 };
 

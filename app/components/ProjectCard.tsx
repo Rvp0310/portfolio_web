@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({project}) => {
         style={{ width: "100%", height: "150px", objectFit: "cover" }}
     />
       <CardContent sx={{flexGrow: 1}}>
-        <Typography gutterBottom variant="h5" component="div" >
+        <Typography gutterBottom variant="h6" component="div" >
           {project.title}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
