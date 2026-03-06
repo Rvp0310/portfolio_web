@@ -26,6 +26,12 @@ const certifications = [
     year: "2025",
     org: "NPTEL"
   },
+  {
+    src: "/Academic_Excellence.jpeg",
+    name: "Academic Excellence (2nd Year - Rank 2)",
+    year: "2026",
+    org: "BVCOE"
+  },
 ]
 const Certifications = () => {
   return (
