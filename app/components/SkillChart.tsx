@@ -43,7 +43,7 @@ const SkillChart: React.FC<SkillChartProps> = ({ skills }) => {
     maintainAspectRatio: true,
     scales: {
       r: {
-        angleLines: { color: "#FFFFFA" }, // deep-navy lines
+        angleLines: { color: "#FFFFFA" }, 
         grid: { color: "#FFFFFA" },
         suggestedMin: 0,
         suggestedMax: 100,
@@ -65,7 +65,7 @@ const SkillChart: React.FC<SkillChartProps> = ({ skills }) => {
   return (
     <div className="card-stack">
       <Radar data={data} options={options} />
-      <h5>Language Usability</h5>
+      <h5>Technology Familiarity</h5>
     </div>
   );
 };
