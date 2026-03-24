@@ -3,6 +3,12 @@ import CertificateCard from '../CertificateCard'
 
 const certifications = [
   {
+    src: "/InternshipCompletion.jpg",
+    name: "Completion Of AI/ML Internship",
+    year: "2026",
+    org: "Infosys Springboard"
+  },
+  {
     src: "/Academic_Excellence.jpeg",
     name: "Academic Excellence (2nd Year - Rank 2)",
     year: "2026",
