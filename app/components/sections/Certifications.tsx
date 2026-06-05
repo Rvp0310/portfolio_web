@@ -15,6 +15,12 @@ const certifications = [
     org: "BVCOE"
   },
   {
+    src: "/gfg160.png",
+    name: "160 days of problem solving",
+    year: "2025",
+    org: "GeeksForGeeks"
+  },
+  {
     src: "/infosys(1).jpeg",
     name: "AI Primer",
     year: "2025",

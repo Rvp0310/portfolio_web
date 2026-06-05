@@ -40,7 +40,7 @@ const projects = [
       "Material UI"
     ],
     repo_link: "https://github.com/Rvp0310/Algorithm_Visualiser",
-    live_link: "",
+    live_link: "https://algorithm-visualiser-phi.vercel.app/",
   },
 ];
 
