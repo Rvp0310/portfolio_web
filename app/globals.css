@@ -1,11 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --deep-twilight: #191868ff; /*background*/
-  --deep-navy: #0C1342ff;  /*borders*/
   --turquoise: #16E0BD; /*active link or 623CEA*/
-  --deep-twilight-2: #13125Aff;  /*section backgorund*/
-  --deep-navy-2: #06053Bff;  /*borders*/
+  --deep-navy: #06053Bff;  /*borders*/
   --lavender-grey: #8E8CC1ff; /*passive link*/
   --cream: #fffecc;  /*highlight*/
   --procelain: #FFFFFA; /*texts*/
@@ -15,7 +12,7 @@
 }
 
 body {
-  background-color: var(--deep-navy-2);
+  background-color: var(--deep-navy);
   color: var(--procelain);
   font-family: 'Arial Narrow Bold', sans-serif;
   margin: 0;
@@ -60,11 +57,9 @@ p{
 
 .pro-pic{
 height: 30vh;
-margin-right: 7rem;
 width: auto;
 display: block;
 position: relative;
-border: 2px solid var(--cream);
 padding: 0.1rem;
 border-radius: 12px;
 }
@@ -146,10 +141,6 @@ border-radius: 12px;
     margin: 0;
   }
 
-  .pro-pic{
-    margin: 0;
-  }
-
   .chart-wrapper{
     width: 100%;;
   }
@@ -194,5 +185,47 @@ border-radius: 12px;
     width: 97% !important;
     height: 50% !important;
     margin: 15px 0 !important;
+  }
+
+  .pro-pic-wrapper{
+    margin: 0 !important;
+  }
+}
+
+.pro-pic-wrapper {
+  position: relative;
+  margin-right: 5.5rem;
+  padding: 3px;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.pro-pic-wrapper::after, .pro-pic-wrapper::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), var(--true-cobalt) 70%, var(--lavender-grey));
+  border-radius: 15px;
+  animation: 3s bord linear infinite;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.pro-pic-wrapper::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes bord{
+  from {
+    --angle: 0deg;
+  } to {
+    --angle: 360deg;
   }
 }
