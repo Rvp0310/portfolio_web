@@ -3,6 +3,12 @@ import CertificateCard from '../CertificateCard'
 
 const certifications = [
   {
+    src: "/hackerrank_sql_2.jpg",
+    name: "SQL (Intermediate)",
+    year: "2026",
+    org: "HackerRank"
+  },
+  {
     src: "/InternshipCompletion.jpg",
     name: "Completion Of AI/ML Internship",
     year: "2026",
@@ -43,7 +49,7 @@ const certifications = [
     name: "Data Science For Engineers",
     year: "2025",
     org: "NPTEL"
-  }
+  },
 ]
 const Certifications = () => {
   return (
